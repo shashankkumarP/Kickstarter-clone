@@ -7,7 +7,7 @@ export const Navbar = () => {
     let navigate = useNavigate();
     
   return (
-    <HStack w='100%'   pl='0px' font-Size='bolder' boxShadow= 'rgba(0, 0, 0, 0.16) 0px 1px 4px'  >
+    <HStack w='100%'   pl='0px' fontSize='bolder' boxShadow= 'rgba(0, 0, 0, 0.16) 0px 1px 4px' mb='1px' pb='1px' >
        <Box  ml='45px' w='16%' display='flex' alignItems='center' justifyContent='space-between' >
         <Text>Discover</Text>
         <Text>Search for a project</Text>
