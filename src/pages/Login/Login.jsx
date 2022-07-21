@@ -1,12 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
 import {HStack,Text,Input,Button,Flex,Box,Stack,Checkbox,Spinner} from "@chakra-ui/react"
 import { Divider } from '@chakra-ui/react'
-import {loginaction,singupaction} from "../../state/Authentication/Authaction"
-
-import { Signup } from '../Signup/Signup'
-import { useDispatch ,useSelector} from 'react-redux'
-import { Previdlege } from '../../context/Previdlege'
-import { useNavigate } from 'react-router-dom'
+import {loginaction,singupaction} from "../../state/Authentication/Authaction";
+import { useDispatch ,useSelector} from 'react-redux';
+import { Previdlege } from '../../context/Previdlege';
+import { useNavigate } from 'react-router-dom';
 import {
   Modal,
   ModalOverlay,
@@ -21,7 +19,9 @@ import {
 export const Login = () => {
   let navigate = useNavigate();
   let dispatch = useDispatch();
-  let {isAuth,isLoading,isError} = useSelector((state)=>state.Auth)
+  let {isAuth,isLoading,isError} = useSelector((state)=>state.Auth);
+  
+  let [modal,setModal] = useState(false);
   let [form,setForm] = useState({
     username:"",
     password:""
@@ -34,39 +34,46 @@ export const Login = () => {
   }
   let handlesubmit = ()=>{
     console.log(form)
-    dispatch(loginaction(form))
+    dispatch(loginaction(form,setModal,modal))
+    navigate("/")
     
   }
   
   useEffect(()=>{
-    isError==true&&onOpen()
-  },[])
+    
+    if(isError==true){
+      onOpen();
+    }
+    // isError==true&&setModal(!modal);
+  },[modal])
    isLoading&&<Spinner color='red.500' />
+   
    
 
   return (
     <div >
-      <>
-      <Box ref={finalRef} tabIndex={-1} aria-label='Focus moved to this box'>
+      
+      
         
-      </Box>
-
-    
-      <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}   >
+     
+      
+      
+      <Modal  aria-label='Focus moved to this box' ref={finalRef}  finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}   >
         <ModalOverlay />
-        <ModalContent w='30%' m='auto' top='5%'>
+        <ModalContent  w='30%' left='34%' m='auto' top="37%" position="absolute " boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px'  bg="#fff" zIndex={1000} opacity={1} backgroundClip= "padding-box" >
           <Box display='flex' justifyContent='space-between' >
           <ModalHeader>Message</ModalHeader>
           <ModalCloseButton w='10px' />
           </Box>
           
           <ModalBody >
-           <Text>You have Entered a wrong credential</Text>
+           <Text>&nbsp;&nbsp;! OOps You have Entered a wrong credential</Text>
           </ModalBody>
         </ModalContent>
       </Modal>
-      </>
-        <Stack display='block' w='35%' m='auto' boxShadow= 'rgba(0, 0, 0, 0.16) 0px 1px 4px' mt='100px' mb='30px' bg='white' >
+      
+      
+        <Stack  display='block' w='35%' m='auto' boxShadow= 'rgba(0, 0, 0, 0.16) 0px 1px 4px' mt='100px' mb='30px' bg='white' >
           <Text textAlign='left' pl='80px' pt='30px' fontSize='larger' letterSpacing='0.5' >Login</Text>
           <Input placeholder='email' name='username' w='300px' h='30px' onChange={handlechange} />
           <br />

@@ -18,7 +18,7 @@ export const singupaction =(form_body)=> (dispatch)=>{
 
 }
 
-export const loginaction = (form_body)=>(dispatch)=>{
+export const loginaction = (form_body,setModal,modal)=>(dispatch)=>{
   form_body=JSON.stringify(form_body);
    dispatch({type:Login_Loading})
     fetch("https://masai-api-mocker.herokuapp.com/auth/login", {
@@ -30,5 +30,9 @@ export const loginaction = (form_body)=>(dispatch)=>{
         "Content-Type": "application/json",
       },
     }).then((r)=>r.json()).then((r)=>{console.log(r);dispatch({type:Login_Successful,payload:r.token})})
-    .catch((err)=>{dispatch({type:Login_Error})})
+    .catch((err)=>{setModal(!modal);dispatch({type:Login_Error})})
+}
+
+export const Logout_action= ()=>(dispatch)=>{
+  dispatch({type:Logout_Successful});
 }
