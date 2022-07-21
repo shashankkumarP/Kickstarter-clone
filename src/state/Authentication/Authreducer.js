@@ -1,7 +1,7 @@
 import {Login_Error, Login_Loading, Login_Successful,Logout_Successful,Signup_Successful} from "./Authactiontype"
 
 let initialauth={
-    isError:true,
+    isError:false,
     isRegistered:false,
     isLoading:false,
     isAuth:false,
@@ -24,7 +24,7 @@ export const Authreducer = (state=initialauth,{type,payload})=>{
             return {...state,isError:true,isLoading:false}
         }
         case Logout_Successful:{
-            
+            localStorage.removeItem("registrationtoken");
             return {...state,isAuth:false,token:null}
         }
         case Signup_Successful:{
