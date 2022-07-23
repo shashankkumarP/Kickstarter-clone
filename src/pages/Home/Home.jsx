@@ -2,6 +2,7 @@ import React from 'react'
 import {Stack,Box,Text,HStack} from "@chakra-ui/react"
 import { Tabular } from '../../components/Tabular/Tabular'
 import { Individual } from '../../components/Individual/Individual'
+import { Creator } from '../../components/creator_corner/Creator'
 
 export const Home = () => {
   return (
@@ -25,6 +26,7 @@ export const Home = () => {
             </Box>
           </HStack>
           <Individual />
+          <Creator />
          </Stack>
          
     </div>

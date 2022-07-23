@@ -6,7 +6,7 @@ export const Individual = () => {
     function likebtn()
     {
         return(
-            <Stack w='40px' h='50px' onChange={()=>console.log("dsd")} >
+            <Stack w='40px' h='50px' onChange={()=>console.log("dsd")}  >
                 
                 <Box>
                     
@@ -20,7 +20,7 @@ export const Individual = () => {
     }
 
   return (
-    <div>
+    <div >
         
         <VStack spacing={6}>
   
@@ -29,7 +29,7 @@ export const Individual = () => {
                 
 
                 
-                <Tooltip label={likebtn()} placement='right-end'   offset={-20} pd='10%' right='150%' closeOnClick={false} >
+                <Tooltip label={likebtn()} placement='right-start'   offset={-20}  right='150%' closeOnClick={false} >
                 <Stack w='350px' h='380px'   border='1px solid'  m='auto'  >
                     <Image w='100%' h='65%' src={`https://ksr-ugc.imgix.net/assets/037/959/607/1438d472c0e3a2b941f172857937e9a8_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657831370&auto=format&frame=1&q=92&s=8d21e15053f12cb944ddfe9daa1708bd`}  />
                     <Text textAlign='left'  _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >Hii My name is shashank</Text>
