@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {Tooltip,Stack,Text,Box,Button,Image,VStack,HStack} from "@chakra-ui/react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
-export const Individual = () => {
 
-    function likebtn()
+function likebtn()
     {
         return(
             <Stack w='40px' h='50px' onChange={()=>console.log("dsd")}  >
@@ -19,8 +21,70 @@ export const Individual = () => {
         )
     }
 
+    const settings = {
+        // className: "center",
+        infinite: true,
+        // centerPadding: "60px",
+        // slidesToShow: 5,
+        // swipeToSlide: true,
+        // afterChange: function(index) {
+        //   console.log(
+        //     `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+        //   );
+        // },
+        // nextArrow:"next"
+    }
+    let slide=[
+        {
+            image:"",
+            title:"",
+            description:"",
+            by:""
+        }
+    ]
+
+export const Individual = ({heroes}) => {
+  let slidepointer = useRef(null)
+  console.log(slidepointer.current)
+    
+
   return (
+    <div style={{width:"95%", margin:"auto"}}>
+        <h2>Swipe To Slide</h2>
+        <div style={{display:"flex",justifyContent:"space-between"}} >
+         <div >
+            <h3 onClick={()=>slidepointer.current.slickPrev()} ><i class="fa-solid fa-angle-left"></i></h3>
+          </div>
+          <div  >
+            <h3 onClick={()=>slidepointer.current.slickNext()} ><i class="fa-solid fa-angle-right"></i></h3>
+          </div>
+        </div>
+        <div  className=''>
+            <Slider ref={slidepointer} slidesToShow={4} swipeToSlide='true' >
+                {
+                    
+                    heroes.map((l,index)=>(
+                        <div>
+                            {ider(l)}
+                        </div>
+                    ))
+                    
+                    
+                }
+            </Slider>
+        </div>
+          
+          
+       
+      </div>
+  )
+}
+function ider(l)
+{
+   
+  return(
     <div >
+        
         
         <VStack spacing={6}>
   
@@ -30,15 +94,16 @@ export const Individual = () => {
 
                 
                 <Tooltip label={likebtn()} placement='right-start'   offset={-20}  right='150%' closeOnClick={false} >
-                <Stack w='350px' h='380px'   border='1px solid'  m='auto'  >
-                    <Image w='100%' h='65%' src={`https://ksr-ugc.imgix.net/assets/037/959/607/1438d472c0e3a2b941f172857937e9a8_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657831370&auto=format&frame=1&q=92&s=8d21e15053f12cb944ddfe9daa1708bd`}  />
-                    <Text textAlign='left'  _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >Hii My name is shashank</Text>
-                    <Text textAlign='left' _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >Hi do you have to do same and you have to say that is that way there are</Text>
-                    <Text textAlign='left' _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >By</Text>
+                <Stack w='300px' h='380px'   border='1px solid'  m='auto'  >
+                    <Image w='100%' h='65%' src={`${l.images.md}`}  />
+                    <Text textAlign='left' fontSize={'large'} fontWeight='bold' _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >{l.name}</Text>
+                    <Text textAlign='left' _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >{l.connections.groupAffiliation}</Text>
+                    <Text textAlign='left' _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >By {l.biography.fullName} </Text>
                 </Stack>
                 </Tooltip>
             </HStack>
         </VStack>
+       
     </div>
   )
 }
