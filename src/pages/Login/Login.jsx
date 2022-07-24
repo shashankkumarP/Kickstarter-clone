@@ -102,7 +102,7 @@ export const Login = () => {
          
           <Box display='flex' alignItems='center' pl='100px' >
             <Text>New to kickstarter ?</Text>
-            <Text color='blue' textDecoration='underline' onClick={()=>{navigate("/signup")}} >Signup</Text>
+            <Text color='blue' textDecoration='underline' _hover={{cursor:"pointer"}} onClick={()=>{navigate("/signup")}} >Signup</Text>
           </Box>
           <Box display='flex'    pl='100px' pr='91px' fontSize='smaller' >
             <Text>This site is protected by reCAPTCHA and the Google  privacy policy

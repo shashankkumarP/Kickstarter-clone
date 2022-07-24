@@ -50,7 +50,7 @@ export const Individual = ({heroes}) => {
 
   return (
     <div style={{width:"95%", margin:"auto"}}>
-        <h2>Swipe To Slide</h2>
+        
         <div style={{display:"flex",justifyContent:"space-between"}} >
          <div >
             <h3 onClick={()=>slidepointer.current.slickPrev()} ><i class="fa-solid fa-angle-left"></i></h3>
@@ -93,11 +93,11 @@ function ider(l)
                 
 
                 
-                <Tooltip label={likebtn()} placement='right-start'   offset={-20}  right='150%' closeOnClick={false} >
-                <Stack w='300px' h='380px'   border='1px solid'  m='auto'  >
+                <Tooltip label={likebtn()} placement='auto-end' shouldWrapChildren      offset={-20}  right='150%' closeOnClick={false} >
+                <Stack w='300px' h='380px'     m='auto'  >
                     <Image w='100%' h='65%' src={`${l.images.md}`}  />
                     <Text textAlign='left' fontSize={'large'} fontWeight='bold' _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >{l.name}</Text>
-                    <Text textAlign='left' _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >{l.connections.groupAffiliation}</Text>
+                    <Text textAlign='left' _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >{l.work.occupation.length==0 ? l.connections.groupAffiliation:l.work.occupation}</Text>
                     <Text textAlign='left' _hover={{textDecoration:"underline",color:"green",cursor:"pointer"}} >By {l.biography.fullName} </Text>
                 </Stack>
                 </Tooltip>

@@ -25,7 +25,7 @@ export const Interviews = () => {
   return (
     <div>
         <Stack w='100%' m='auto' ml='40px'  >
-            <HStack w='95%' h='600px' border='1px solid' display={"flex"} justifyContent="space-around" >
+            <HStack w='95%' h='600px' display={"flex"} justifyContent="space-around" >
                 <Stack  w='23%' h='100%' textAlign={"left"}  >
                     <Image w='100%' h='70%' src={`${rectangle[0].image}`} />
                     <Text _hover={{textDecoration:"underline",cursor:"pointer"}} fontSize={"large"}  >{rectangle[0].title}</Text>
