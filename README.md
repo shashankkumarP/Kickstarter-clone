@@ -5,8 +5,10 @@ Kickstarter exists to help bring creative projects to life. A home for film, mus
 
 ## Acknowledgements
 - In unit 4 I got task to clone Kickstarter.com. 
-- In this website I had tried to clone Login page, Signup page, and homepage page. To acheive my target i have used Reactjs,Redux and Chakra Ui
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) 
+- In this website I had tried to clone Login page, Signup page, and homepage page. To acheive my target i have used Reactjs,Redux,Thunk and Chakra Ui
+
+
+   ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) 
   
 ### Team Member
 
