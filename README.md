@@ -1,23 +1,59 @@
-# Getting Started with Create React App
+# Kickstarter Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kickstarter exists to help bring creative projects to life. A home for film, music, art, theater, games, comics, design, photography, and more.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Acknowledgements
+- In unit 4 I got task to clone Kickstarter.com. 
+- In this website I had tried to clone Login page, Signup page, and homepage page. To acheive my target i have used Reactjs,Redux and Chakra Ui
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) 
+  
+### Team Member
 
-### `npm start`
+     Shashank kumar
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://shashankkumarportfolio.netlify.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shashank-kumar-83008122b/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pages & Features
 
-### `npm test`
+- Homepage 
+- Login page
+- Sign-up page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### Related Image
+
+
+<h3 align="center"  >Login</h3>
+
+![kickstarter_login](https://user-images.githubusercontent.com/67480861/192587709-c02382ae-6bd9-4a22-80d2-7c410aa318aa.PNG)
+
+
+<h3 align="center" >Sing up</h3>
+ 
+ ![kickstarter_singnup](https://user-images.githubusercontent.com/67480861/192587751-5cb51923-fd1e-460e-921b-fc96a46847ff.PNG)
+
+
+ 
+ <h3 align="center" >Homepage screenshot-1</h3>
+ 
+ ![kickstarter_homepage1](https://user-images.githubusercontent.com/67480861/192587836-59fba32d-4473-4738-8d95-4e070f81a959.PNG)
+
+
+ 
+ <h3 align="center" >Homepage screenshot-2</h3>
+ 
+![kickstarter_hompage2](https://user-images.githubusercontent.com/67480861/192587918-db3a0d24-8bbe-4db9-a2f2-d83bd8fdf379.PNG)
+
+ 
+  <h3 align="center" >Homepage screenshot-3</h3>
+ 
+ ![kickstarter_homepage3](https://user-images.githubusercontent.com/67480861/192587975-a089ce0e-351a-4757-bc55-c5737ef1bd0e.PNG)
+
+
+
+
 
 ### `npm run build`
 
@@ -29,42 +65,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Documentation
+[Github-Repo-Link](https://github.com/shashankkumarP/quizzical-beef-9788)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Feedback
+If you have any feedback, please reach out to us at mail  <a href='https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Hi+There&to=madhav131ex@gmail.com&body=body+goes+here' > click-here</a>
