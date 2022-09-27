@@ -66,7 +66,7 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Documentation
-[Github-Repo-Link](https://github.com/shashankkumarP/quizzical-beef-9788)
+[Github-Repo-Link](https://github.com/shashankkumarP/Kickstarter-clone)
 
 
 
